@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <PropertyGroup>
+    <RootNamespace>Demonware.Service.Gateway</RootNamespace>
+    <AssemblyName>Demonware.Gateway</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Demonware.Core\Demonware.Core.csproj" />
+    <ProjectReference Include="..\..\Demonware.Modern\Demonware.Modern.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.0" />
+  </ItemGroup>
+</Project>
+

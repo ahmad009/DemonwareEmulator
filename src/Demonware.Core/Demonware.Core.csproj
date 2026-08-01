@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Demonware.Core</RootNamespace>
+    <AssemblyName>Demonware.Core</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Description>Shared crypto, networking, and storage for DemonwareEmulator</Description>
+  </PropertyGroup>
+</Project>
