@@ -40,6 +40,17 @@ public sealed class FileStore
         }
     }
 
+    public bool DeleteFile(string key)
+    {
+        var path = Path.Combine(_root, "files", Safe(key) + ".bin");
+        lock (_gate)
+        {
+            if (!File.Exists(path)) return false;
+            File.Delete(path);
+            return true;
+        }
+    }
+
     public byte[]? GetFile(string key)
     {
         var path = Path.Combine(_root, "files", Safe(key) + ".bin");
@@ -134,3 +145,4 @@ public sealed class SessionKeyMap
 
     public void Remove(string connectionId) => _keys.TryRemove(connectionId, out _);
 }
+

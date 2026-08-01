@@ -51,3 +51,24 @@ dotnet run --project src/services/Demonware.Service.ModernLobby
 ```
 
 Requires .NET 9+ SDK.
+
+## Legacy services (ported)
+
+| Type | Service |
+|------|---------|
+| 28/12/26 | Auth (client/server/IW5 key) |
+| 7 | Lobby (session key) |
+| 6 | bdMessaging |
+| 10 (+ex) | bdStorage |
+| 21 | bdMatchMaking |
+| 18 | bdBandwidthTest |
+| 8 | bdProfiles |
+| 12 | bdTitleUtilities |
+| 27 | bdDML |
+| 28 crypt | bdGroups |
+| 38 | bdAnticheat |
+| 86 | bdRelayService |
+| 67 | bdEventLog |
+| 23 | bdCounter |
+
+Modern AES lobby: service IDs from NewDW* (storage 10/58, match 21/138/145, bandwidth, DML, titles, + empty-OK for the rest).

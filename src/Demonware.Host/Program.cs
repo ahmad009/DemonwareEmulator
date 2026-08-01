@@ -9,7 +9,6 @@ Log.Banner();
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddSingleton(_ => new FileStore());
-builder.Services.AddSingleton<SessionKeyMap>();
 builder.Services.AddHostedService<StunWorker>();
 builder.Services.AddHostedService<GatewayWorker>();
 builder.Services.AddHostedService<LegacyLobbyWorker>();
