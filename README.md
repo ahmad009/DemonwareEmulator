@@ -71,4 +71,4 @@ Requires .NET 9+ SDK.
 | 67 | bdEventLog |
 | 23 | bdCounter |
 
-Modern AES lobby: service IDs from NewDW* (storage 10/58, match 21/138/145, bandwidth, DML, titles, + empty-OK for the rest).
+Modern AES lobby: (storage 10/58, match 21/138/145, bandwidth, DML, titles, + empty-OK for the rest).
